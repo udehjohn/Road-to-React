@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <script src="index.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calcgrid">
+        <div class="output">
+            <!-- <div class="previous-operand"></div> -->
+            <!-- <div class="current-operand" name="display"></div> -->
+            <input type="text" id="display">
+        </div>
+        <button class="two" onclick="clearScreen()">AC</button>
+        <button onclick="deleteOne()">DEL</button>
+        <button onclick="displayValue('1')">1</button>
+        <button onclick="displayValue('2')">2</button>
+        <button onclick="displayValue('/')">/</button>
+        <button onclick="displayValue('3')">3</button>
+        <button onclick="displayValue('*')">*</button>
+        <button onclick="displayValue('4')">4</button>
+        <button onclick="displayValue('5')">5</button>
+        <button onclick="displayValue('6')">6</button>
+        <button onclick="displayValue('+')">+</button>
+        <button onclick="displayValue('7')">7</button>
+        <button onclick="displayValue('8')">8</button>
+        <button onclick="displayValue('9')">9</button>
+        <button onclick="displayValue('-')">-</button>
+        <button onclick="displayValue('.')">.</button>
+        <button onclick="displayValue('0')">0</button>
+        <button class="two" onclick="compute()">=</button>
+    </div>
+</body>
+
+
+<script>
+    function displayValue(value){
+        document.getElementById("display").value += value;
+    }
+    function clearScreen(){
+        document.getElementById("display").value = "";
+    }
+    function deleteOne(){
+        document.getElementById("display").value = value.toString.slice(0,-1);
+    }
+    function compute(){
+        
+    }
+</script>
+</html>
